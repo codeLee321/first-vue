@@ -7,6 +7,8 @@ $bfc:#759bfa;
 $rfc:#ec3063;
 $bbc:#6f94ff;
 $rbc:#ed648d;
+$shc:#ffc57c;
+$sdhc:#ced6e2;
 $bw1: 0.05rem;
 $br2: 0.1rem;
 $br5: 0.25rem;
@@ -30,6 +32,15 @@ $br5: 0.25rem;
 	border: $width $style $color;
 	@include borderRadius($radius);
 }
+
+@mixin setblur($px){
+	filter: blur($px);
+	-webkit-filter: blur($px);
+	-moz-filter: blur($px);
+	-ms-filter: blur($px);
+	-o-filter: blur($px);
+}
+
 //定位全屏
 @mixin allcover{
 	position:absolute;

@@ -39,6 +39,8 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: rgba(246, 248, 249, 0.5);
+
   span{
     @include wh(8.2rem, 2.4rem);
     @include sc(0.8rem ,$mfc);
